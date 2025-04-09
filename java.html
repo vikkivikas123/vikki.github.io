@@ -1,0 +1,56 @@
+<html>
+<body bgcolor="orange">
+
+<p> Select an new item form the list.</p>
+<form name="rs">
+<select id="item"onchange="itm()">
+  <option value="Ms office">Ms office</option>
+  <option value="Dos">Dos</option>
+  <option value="Windows">Windows</option>
+  <option value="Linux">Linux</option>
+  <option value="Html">Html</option>
+  <option value="Java">Java</option>
+   <option value="Photo shop">Photo shop</option>
+
+</select>
+<br>
+duration:<br>
+<input type="text" id="d"><br>
+cource fee :<br>
+<input type="text" id="f"><br>
+total amount:<br>
+<input type="text" id"a"><br>
+<input type="button" onclick="cal()"value="caluclate">
+
+<script>
+function itm()
+{
+  var i= document.getElementById("item").value;
+
+if(i=="Ms office")
+document.rs.f.value="5000";
+if(i=="windows";
+document.rs.f.value="3000";
+if(i=="dos";
+document.rs.f.value="2500";
+if(i=="linux";
+document.rs.f.value="2999";
+if(i=="photo shop";
+document.rs.f.value="2000";
+if(i=="html";
+document.rs.f.value="4000";
+if(i=="java";
+}
+function cal()
+{
+var d=document.rs.d. value;
+var f=document.rs.f.value;
+var a=d*f;
+document.rs.a.value=a;
+}
+</script>
+</body>
+</html>
+
+
+
